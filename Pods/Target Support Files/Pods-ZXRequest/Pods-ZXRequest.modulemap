@@ -1,0 +1,6 @@
+framework module Pods_ZXRequest {
+  umbrella header "Pods-ZXRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

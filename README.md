@@ -6,26 +6,26 @@ ZXRequest是基于Moya网络请求的应用示例。
 2.返回数据统一在ZXBaseModel中处理
 
 #请求接口示例（可以复制到浏览器中直接查看）：
-https://suggest.taobao.com?q=abcdefgh
+https://suggest.taobao.com/sug?q=abcdefgh
 #返回的数据结构
 ```swift
 	{
-			"result" : [
-					[
-					"abcdefghijklmnop",
-					"5"
-					],
-					[
-					"abcdefghi",
-					"73"
-					]
+	"result" : [
+			[
+			"abcdefghijklmnop",
+			"5"
+			],
+			[
+			"abcdefghi",
+			"73"
 			]
+	]
 	}
 
 #应用示例
- ```swift 
-  let success:(Any?)->Void = { data in
-   guard data != nil else {
+```swift 
+let success:(Any?)->Void = { data in
+guard data != nil else {
    print("data is nil")
    return
    }

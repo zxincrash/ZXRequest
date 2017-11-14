@@ -1,5 +1,5 @@
 //
-//  ZXCityListViewController.swift
+//  ZXRequestGoodsViewController.swift
 //  ZXRequest
 //
 //  Created by zhaoxin on 2017/11/13.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZXRequestListViewController: ZXBaseViewController,UITableViewDelegate,UITableViewDataSource {
+class ZXRequestGoodsViewController: ZXBaseViewController,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return goodArray.count
@@ -27,7 +27,7 @@ class ZXRequestListViewController: ZXBaseViewController,UITableViewDelegate,UITa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let goodName:String = goodArray[indexPath.row]
         
-        let goodVC:ZXGoodsViewController = ZXGoodsViewController()
+        let goodVC:ZXGoodsDetailViewController = ZXGoodsDetailViewController()
         goodVC.goodName = goodName
         self.navigationController?.pushViewController(goodVC, animated: true)
     }

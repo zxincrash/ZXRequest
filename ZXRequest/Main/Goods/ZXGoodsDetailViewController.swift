@@ -1,5 +1,5 @@
 //
-//  ZXGoodsViewController.swift
+//  ZXGoodsDetailViewController.swift
 //  ZXRequest
 //
 //  Created by zhaoxin on 2017/11/13.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZXGoodsViewController:ZXBaseViewController,UITableViewDelegate,UITableViewDataSource {
+class ZXGoodsDetailViewController:ZXBaseViewController,UITableViewDelegate,UITableViewDataSource {
     var goodsArray:Array<ZXGoodsModel>!
     var goodName:String!
     

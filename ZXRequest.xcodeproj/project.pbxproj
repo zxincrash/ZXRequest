@@ -16,7 +16,7 @@
 		DC3380CE1FB975D8005A575C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3380CB1FB975D8005A575C /* Assets.xcassets */; };
 		DC3380CF1FB975D8005A575C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC3380CC1FB975D8005A575C /* Info.plist */; };
 		DC3380D11FB975F3005A575C /* ZXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380D01FB975F3005A575C /* ZXBaseViewController.swift */; };
-		DC3380D31FB9762C005A575C /* ZXRequestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380D21FB9762C005A575C /* ZXRequestListViewController.swift */; };
+		DC3380D31FB9762C005A575C /* ZXRequestGoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380D21FB9762C005A575C /* ZXRequestGoodsViewController.swift */; };
 		DC3380D51FB9782D005A575C /* ZXToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380D41FB9782D005A575C /* ZXToast.swift */; };
 		DC3380E11FB97F0D005A575C /* ZXRequestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380D61FB97F0D005A575C /* ZXRequestUtils.swift */; };
 		DC3380E21FB97F0D005A575C /* ZXRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380D71FB97F0D005A575C /* ZXRequest.swift */; };
@@ -25,7 +25,7 @@
 		DC3380E71FB97F0D005A575C /* ZXHandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380DE1FB97F0D005A575C /* ZXHandyJSON.swift */; };
 		DC3380E91FB97F0D005A575C /* ZXApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380E01FB97F0D005A575C /* ZXApi.swift */; };
 		DC3380EB1FB98369005A575C /* ZXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380EA1FB98369005A575C /* ZXNavigationController.swift */; };
-		DC3380F01FB988AC005A575C /* ZXGoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380EF1FB988AC005A575C /* ZXGoodsViewController.swift */; };
+		DC3380F01FB988AC005A575C /* ZXGoodsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3380EF1FB988AC005A575C /* ZXGoodsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,7 @@
 		DC3380CB1FB975D8005A575C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC3380CC1FB975D8005A575C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC3380D01FB975F3005A575C /* ZXBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXBaseViewController.swift; sourceTree = "<group>"; };
-		DC3380D21FB9762C005A575C /* ZXRequestListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXRequestListViewController.swift; sourceTree = "<group>"; };
+		DC3380D21FB9762C005A575C /* ZXRequestGoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXRequestGoodsViewController.swift; sourceTree = "<group>"; };
 		DC3380D41FB9782D005A575C /* ZXToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXToast.swift; sourceTree = "<group>"; };
 		DC3380D61FB97F0D005A575C /* ZXRequestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXRequestUtils.swift; sourceTree = "<group>"; };
 		DC3380D71FB97F0D005A575C /* ZXRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXRequest.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		DC3380DE1FB97F0D005A575C /* ZXHandyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXHandyJSON.swift; sourceTree = "<group>"; };
 		DC3380E01FB97F0D005A575C /* ZXApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXApi.swift; sourceTree = "<group>"; };
 		DC3380EA1FB98369005A575C /* ZXNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXNavigationController.swift; sourceTree = "<group>"; };
-		DC3380EF1FB988AC005A575C /* ZXGoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXGoodsViewController.swift; sourceTree = "<group>"; };
+		DC3380EF1FB988AC005A575C /* ZXGoodsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXGoodsDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +199,7 @@
 		DC3380C61FB975D8005A575C /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DC3380EE1FB98897005A575C /* Weather */,
+				DC3380EE1FB98897005A575C /* Goods */,
 				DC3380C71FB975D8005A575C /* Base */,
 				DC3380C81FB975D8005A575C /* RequestList */,
 			);
@@ -218,7 +218,7 @@
 		DC3380C81FB975D8005A575C /* RequestList */ = {
 			isa = PBXGroup;
 			children = (
-				DC3380D21FB9762C005A575C /* ZXRequestListViewController.swift */,
+				DC3380D21FB9762C005A575C /* ZXRequestGoodsViewController.swift */,
 			);
 			path = RequestList;
 			sourceTree = "<group>";
@@ -252,12 +252,12 @@
 			path = ResponseData;
 			sourceTree = "<group>";
 		};
-		DC3380EE1FB98897005A575C /* Weather */ = {
+		DC3380EE1FB98897005A575C /* Goods */ = {
 			isa = PBXGroup;
 			children = (
-				DC3380EF1FB988AC005A575C /* ZXGoodsViewController.swift */,
+				DC3380EF1FB988AC005A575C /* ZXGoodsDetailViewController.swift */,
 			);
-			path = Weather;
+			path = Goods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,9 +467,9 @@
 				DC3380D51FB9782D005A575C /* ZXToast.swift in Sources */,
 				DC3380E71FB97F0D005A575C /* ZXHandyJSON.swift in Sources */,
 				DC3380E41FB97F0D005A575C /* ZXRequestHead.swift in Sources */,
-				DC3380F01FB988AC005A575C /* ZXGoodsViewController.swift in Sources */,
+				DC3380F01FB988AC005A575C /* ZXGoodsDetailViewController.swift in Sources */,
 				DC3380E11FB97F0D005A575C /* ZXRequestUtils.swift in Sources */,
-				DC3380D31FB9762C005A575C /* ZXRequestListViewController.swift in Sources */,
+				DC3380D31FB9762C005A575C /* ZXRequestGoodsViewController.swift in Sources */,
 				DC3380EB1FB98369005A575C /* ZXNavigationController.swift in Sources */,
 				DC3380E51FB97F0D005A575C /* ZXRequestParam.swift in Sources */,
 				DC3380E91FB97F0D005A575C /* ZXApi.swift in Sources */,
